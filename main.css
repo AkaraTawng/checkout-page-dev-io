@@ -1,5 +1,10 @@
-.footer-content-container {
-  background-color: orange;
-  height: 5rem;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: purple;
+  height: 3rem;
 }/*# sourceMappingURL=main.css.map */
