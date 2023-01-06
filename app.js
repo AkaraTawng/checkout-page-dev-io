@@ -2,7 +2,7 @@ const decrementBtn = document.querySelector("#decrement");
 const incrementBtn = document.querySelector("#increment");
 const quantity = document.querySelector("#quantity");
 
-let counter = 5;
+let counter = 0;
 quantity.innerText=counter;
 
 const decrement = () => {
@@ -12,3 +12,10 @@ const decrement = () => {
     }
     return counter;
 }
+
+const increment = () => {
+    counter++;
+    quantity.innerText=counter;
+}
+
+/* add delete item function. if item is 0, remove from basket. */
