@@ -25,4 +25,12 @@ footer {
   border-radius: 15px;
   width: 95%;
   margin: 0 auto;
+}
+#basket img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 15px;
+}
+#basket #basket-item-1-outer-container {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
