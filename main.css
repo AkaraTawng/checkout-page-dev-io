@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
 footer {
   background-color: purple;
   height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
