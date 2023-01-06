@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["scss/layout/_footer.scss","main.css"],"names":[],"mappings":"AAAA;EACI,wBAAA;EACA,YAAA;EACA,WAAA;ACCJ","file":"main.css"}
