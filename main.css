@@ -33,4 +33,18 @@ footer {
 }
 #basket #basket-item-1-outer-container {
   display: flex;
+}
+
+#basket #basket-item-1-quantity {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  padding: 1rem 0.5rem;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+#basket #basket-item-1-quantity button {
+  height: 1.8rem;
+  width: 1.8rem;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

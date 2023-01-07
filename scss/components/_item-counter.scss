@@ -1,0 +1,16 @@
+#basket {
+    #basket-item-1-quantity {
+        display: flex;
+        width: 100%;
+        // background-color: blue;
+        border: 2px solid black;
+        padding: 1rem .5rem;
+        border-radius: 15px;
+        justify-content: space-around;
+        button {
+            height: 1.8rem;
+            width: 1.8rem;
+            border: none;
+        }
+    }
+}
