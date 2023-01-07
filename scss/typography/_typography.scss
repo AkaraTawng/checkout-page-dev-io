@@ -2,4 +2,10 @@
 body {
     font-family: $ms;
     font-weight: 600;
+
+    header {
+        h1 {
+            color: $primary-header-semi-bold ;
+        }
+    }
 }
