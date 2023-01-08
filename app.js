@@ -8,19 +8,19 @@ const renderBasket = () => {
     products.forEach(product => {
         basket.innerHTML += `
         <div class="basket-item-outer-container">
-        <img src="./img/bag.png" alt="backpack">
+        <img src=${product.imgSrc} alt=${product.name}>
             <div class="basket-item-inner-container">
                 <div class="basket-item-info">
-                    <h2>Vintage Backpack</h2>
-                    <p>$54.99 <span>$94.99</span></p>
+                    <h2>${product.name}</h2>
+                    <p>$${product.discountPrice} <span>$${product.oldPrice}</span></p>
                 </div>
                 <div id="basket-item-quantity">
                     <button id="decrement">-</button>
-                    <h2 id="quantity"></h2>
+                    <h2 id="quantity">${product.quantity}</h2>
                     <button id="increment">+</button>
                 </div>
             </div>
-    </div>
+        </div>
         `
     })
 }
