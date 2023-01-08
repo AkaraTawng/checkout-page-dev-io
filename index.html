@@ -17,12 +17,26 @@
     </header>
     <main>
         <section id="basket">
-            <div id="basket-item-1-outer-container">
+            <div class="basket-item-outer-container">
                 <img src="./img/bag.png" alt="backpack">
-                <div class="basket-item-1-inner-container">
-                    <div id="basket-item-1-item-info">
+                <div class="basket-item-inner-container">
+                    <div class="basket-item-info">
                         <h2>Vintage Backpack</h2>
                         <p>$54.99 <span>$94.99</span></p>
+                    </div>
+                    <div id="basket-item-1-quantity">
+                        <button onclick="decrement()" id="decrement">-</button>
+                        <h2 id="quantity"></h2>
+                        <button onclick="increment()" id="increment">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="basket-item-outer-container">
+                <img src="./img/shoes.png" alt="shoes">
+                <div class="basket-item-inner-container">
+                    <div class="basket-item-info">
+                        <h2>Levi Shoes</h2>
+                        <p>$74.99 <span>$124.99</span></p>
                     </div>
                     <div id="basket-item-1-quantity">
                         <button onclick="decrement()" id="decrement">-</button>

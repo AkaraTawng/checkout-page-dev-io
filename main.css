@@ -29,7 +29,6 @@ body {
 body header h1 {
   color: #4e5150;
 }
-
 /* colors */
 /* fonts */
 #basket {
@@ -43,7 +42,7 @@ body header h1 {
   height: 8rem;
   border-radius: 15px;
 }
-#basket #basket-item-1-outer-container {
+#basket .basket-item-outer-container {
   display: flex;
 }
 

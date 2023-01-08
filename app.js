@@ -19,3 +19,4 @@ const increment = () => {
 }
 
 /* add delete item function. if item is 0, remove from basket. */
+/* add products js file as database for products */
