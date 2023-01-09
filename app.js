@@ -1,11 +1,12 @@
-const decrementBtn = document.querySelector("#decrement");
-const incrementBtn = document.querySelector("#increment");
-const quantity = document.querySelector("#quantity");
+// const decrementBtn = document.querySelector("#decrement");
+// const incrementBtn = document.querySelector("#increment");
+// const quantity = document.querySelector("#quantity");
 
 const basket = document.querySelector("#basket");
 
 const renderBasket = () => {
     products.forEach(product => {
+        // basket.innerHTML = '';
         basket.innerHTML += `
         <div class="basket-item-outer-container">
         <img src=${product.imgSrc} alt=${product.name}>
@@ -27,22 +28,42 @@ const renderBasket = () => {
 
 renderBasket();
 
-
-let counter = 0;
-quantity.innerText=counter;
-
-const decrement = () => {
-    if(counter > 0){
-          counter--;
-    quantity.innerText=counter;
-    }
-    return counter;
+const changeQuantity = (action, id) => {
+    let basket = products.map(product => {
+        // let newQuantity = product.quantity;
+        if(product.id === id){
+            if(action === 'minus'){
+                // console.log(product.id, 'minus')
+              product.quantity-=1;
+            } else if(action === 'plus'){
+                // console.log(product.id, 'plus')
+                product.quantity+=1;
+            }
+            // console.log({...product, quantity: product.quantity})
+            renderBasket();
+            return {...product, quantity: product.quantity}
+        }
+        
+    })
+    
 }
 
-const increment = () => {
-    counter++;
-    quantity.innerText=counter;
-}
+
+// let counter = 0;
+// quantity.innerText=counter;
+
+// const decrement = () => {
+//     if(counter > 0){
+//           counter--;
+//     quantity.innerText=counter;
+//     }
+//     return counter;
+// }
+
+// const increment = () => {
+//     counter++;
+//     quantity.innerText=counter;
+// }
 
 /* add delete item function. if item is 0, remove from basket. */
 /* add products js file as database for products */ 
