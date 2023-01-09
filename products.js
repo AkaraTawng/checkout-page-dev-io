@@ -8,7 +8,7 @@ const products = [
         quantity: 1
     }, 
     {
-        id: 1 , 
+        id: 1, 
         name: 'Levi Shoes', 
         oldPrice: 124.99, 
         discountPrice: 74.99, 

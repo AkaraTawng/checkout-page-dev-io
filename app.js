@@ -5,8 +5,8 @@
 const basket = document.querySelector("#basket");
 
 const renderBasket = () => {
+     basket.innerHTML = '';
     products.forEach(product => {
-        // basket.innerHTML = '';
         basket.innerHTML += `
         <div class="basket-item-outer-container">
         <img src=${product.imgSrc} alt=${product.name}>
@@ -29,24 +29,19 @@ const renderBasket = () => {
 renderBasket();
 
 const changeQuantity = (action, id) => {
-    let basket = products.map(product => {
-        // let newQuantity = product.quantity;
+    products.map(product => {
         if(product.id === id){
-            if(action === 'minus'){
-                // console.log(product.id, 'minus')
-              product.quantity-=1;
-            } else if(action === 'plus'){
-                // console.log(product.id, 'plus')
+            if(product.quantity > 0 && action === 'minus'){
+                product.quantity-=1;
+            }
+            else if(action === 'plus'){
                 product.quantity+=1;
             }
-            // console.log({...product, quantity: product.quantity})
             renderBasket();
-            return {...product, quantity: product.quantity}
-        }
-        
-    })
-    
-}
+            return {...product, quantity: product.quantity};
+        };
+    });
+};
 
 
 // let counter = 0;
