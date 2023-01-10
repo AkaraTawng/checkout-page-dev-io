@@ -37,8 +37,6 @@ const changeQuantity = (action, id) => {
             if(product.quantity === 0){
                 removeItemFromCart(product.id);
             }
-            // renderBasket();
-            // basketTotal();
             updateCart();
             return {...product, quantity: product.quantity};
         };
@@ -82,35 +80,11 @@ basketTotal();
 const updateCart = () => {
     renderBasket();
     basketTotal();
-}
+};
 
 const removeItemFromCart = (id) => {
-    let newProducts = products.filter(product => product.id !== id);
-    console.log(newProducts, 'new')
+    products = products.filter(product => product.id !== id);
     updateCart();
-}
-removeItemFromCart();
+};
 
-/** TODO 
- * implement remove item function
- * implement discount function - if order total is >= 5,000, shipping is free.
-  */ 
-
-
-
-// const removeItemFromCart = (id) => {
-//     products.forEach(product => {
-//         if(product.quantity === 0){
-//             // products.filter(product => product.id !== id);
-//             console.log(product.name)
-//         }
-        
-//     })
-//     renderBasket();
-// }
-// removeItemFromCart();
-
-// const removeItemFromBasket = (id) => {
-//     basket = basket.
-// }
 

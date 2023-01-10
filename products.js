@@ -1,4 +1,4 @@
-const products = [
+let products = [
     {
         id: 0, 
         name: 'Vintage Backpack', 
@@ -16,5 +16,5 @@ const products = [
         imgSrc: './img/shoes.png', 
         quantity: 1,
         shipping: 9.5
-    }
-]
+    },
+];
