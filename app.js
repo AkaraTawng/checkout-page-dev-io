@@ -1,11 +1,8 @@
-// const decrementBtn = document.querySelector("#decrement");
-// const incrementBtn = document.querySelector("#increment");
-// const quantity = document.querySelector("#quantity");
-
 const basket = document.querySelector("#basket");
+const basketTotalContainer = document.querySelector("#totals-container");
 
 const renderBasket = () => {
-     basket.innerHTML = '';
+    basket.innerHTML = '';
     products.forEach(product => {
         basket.innerHTML += `
         <div class="basket-item-outer-container">
@@ -23,8 +20,8 @@ const renderBasket = () => {
             </div>
         </div>
         `;
-    })
-}
+    });
+};
 
 renderBasket();
 
@@ -39,26 +36,28 @@ const changeQuantity = (action, id) => {
             }
             renderBasket();
             return {...product, quantity: product.quantity};
+        
         };
     });
 };
 
+const basketTotal = () => {
 
-// let counter = 0;
-// quantity.innerText=counter;
+}
 
-// const decrement = () => {
-//     if(counter > 0){
-//           counter--;
-//     quantity.innerText=counter;
-//     }
-//     return counter;
+// const removeItemFromCart = (id) => {
+//     products.forEach(product => {
+//         if(product.quantity === 0){
+//             // products.filter(product => product.id !== id);
+//             console.log(product.name)
+//         }
+        
+//     })
+//     renderBasket();
+// }
+// removeItemFromCart();
+
+// const removeItemFromBasket = (id) => {
+//     basket = basket.
 // }
 
-// const increment = () => {
-//     counter++;
-//     quantity.innerText=counter;
-// }
-
-/* add delete item function. if item is 0, remove from basket. */
-/* add products js file as database for products */ 
