@@ -23,7 +23,6 @@ const renderBasket = () => {
         `;
     });
 };
-
 renderBasket();
 
 const changeQuantity = (action, id) => {
@@ -48,20 +47,43 @@ const basketTotal = () => {
     products.forEach(product => {
        totalPrice += product.discountPrice * product.quantity;
        totalShipping += product.shipping * product.quantity;
+       
     });
 
-    basketTotalContainer.innerHTML = `
-    <div id="shipping">
-        <h2>Shipping</h2>
-        <p>$${totalShipping}</p>
-    </div>
-    <div id="total">
-        <h2>Total</h2>
-        <p>$${totalPrice}</p>
-    </div>
-    `;
+    if(totalShipping >= 500){
+        basketTotalContainer.innerHTML = `
+        <div id="shipping">
+            <h2>Shipping</h2>
+            <p>Free Shipping! 🥳</p>
+        </div>
+        <div id="total">
+            <h2>Total</h2>
+            <p>$${totalPrice.toFixed(2)}</p>
+        </div>
+        `;
+    } else {
+        basketTotalContainer.innerHTML = `
+        <div id="shipping">
+            <h2>Shipping</h2>
+            <p>$${totalShipping}</p>
+        </div>
+        <div id="total">
+            <h2>Total</h2>
+            <p>$${totalPrice.toFixed(2)}</p>
+        </div>
+        `;
+    };
 };
 basketTotal();
+
+
+
+/** TODO 
+ * implement remove item function
+ * implement discount function - if order total is >= 5,000, shipping is free.
+  */ 
+
+
 
 // const removeItemFromCart = (id) => {
 //     products.forEach(product => {
