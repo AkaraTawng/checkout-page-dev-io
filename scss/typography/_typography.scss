@@ -10,6 +10,20 @@ body {
     }
 
     #basket {
-        
+        .basket-item-info {
+            h2 {
+                font-size: .7rem;
+            }
+
+            p {
+                font-size: .9rem;
+                color: $accent-orange;
+                span {
+                    font-size: .7rem;
+                    color: $primary-header-semi-bold;
+                    text-decoration: line-through;
+                }
+            }
+        }
     }
 }
