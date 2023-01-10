@@ -1,4 +1,3 @@
-// const basket = document.querySelector("#basket");
 const productsContainer = document.querySelector("#products-container");
 const basketTotalContainer = document.querySelector("#totals-container");
 
@@ -13,7 +12,7 @@ const renderBasket = () => {
                     <h2>${product.name}</h2>
                     <p>$${product.discountPrice} <span>$${product.oldPrice}</span></p>
                 </div>
-                <div id="basket-item-quantity">
+                <div class="basket-item-quantity">
                     <button onclick="changeQuantity('minus', ${product.id})" id="decrement">-</button>
                     <h2 id="quantity">${product.quantity}</h2>
                     <button onclick="changeQuantity('plus', ${product.id})" id="increment">+</button>
@@ -62,7 +61,7 @@ const basketTotal = () => {
             <p>$${totalPrice.toFixed(2)}</p>
         </div>
         `;
-    } else {
+    } else if (totalShipping < 500){
         basketTotalContainer.innerHTML = `
         <div id="shipping">
             <h2>Shipping</h2>

@@ -29,6 +29,19 @@ body {
 body header h1 {
   color: #4e5150;
 }
+body #basket .basket-item-info h2 {
+  font-size: 0.7rem;
+}
+body #basket .basket-item-info p {
+  font-size: 0.9rem;
+  color: #f2994a;
+}
+body #basket .basket-item-info p span {
+  font-size: 0.7rem;
+  color: #4e5150;
+  text-decoration: line-through;
+}
+
 /* colors */
 /* fonts */
 #basket {
@@ -44,6 +57,15 @@ body header h1 {
 }
 #basket .basket-item-outer-container {
   display: flex;
+  justify-content: space-around;
+}
+#basket .basket-item-outer-container .basket-item-quantity {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #828282;
+  border-radius: 10px;
+  padding: 7%;
+  width: 8rem;
 }
 
 #basket #basket-item-1-quantity {
