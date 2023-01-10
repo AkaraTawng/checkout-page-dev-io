@@ -1,10 +1,11 @@
-const basket = document.querySelector("#basket");
+// const basket = document.querySelector("#basket");
+const productsContainer = document.querySelector("#products-container");
 const basketTotalContainer = document.querySelector("#totals-container");
 
 const renderBasket = () => {
-    basket.innerHTML = '';
+    productsContainer.innerHTML = '';
     products.forEach(product => {
-        basket.innerHTML += `
+        productsContainer.innerHTML += `
         <div class="basket-item-outer-container">
         <img src=${product.imgSrc} alt=${product.name}>
             <div class="basket-item-inner-container">
@@ -35,15 +36,32 @@ const changeQuantity = (action, id) => {
                 product.quantity+=1;
             }
             renderBasket();
+            basketTotal();
             return {...product, quantity: product.quantity};
-        
         };
     });
 };
 
 const basketTotal = () => {
+    let totalPrice = 0, totalShipping = 0;
+    
+    products.forEach(product => {
+       totalPrice += product.discountPrice * product.quantity;
+       totalShipping += product.shipping * product.quantity;
+    });
 
-}
+    basketTotalContainer.innerHTML = `
+    <div id="shipping">
+        <h2>Shipping</h2>
+        <p>$${totalShipping}</p>
+    </div>
+    <div id="total">
+        <h2>Total</h2>
+        <p>$${totalPrice}</p>
+    </div>
+    `;
+};
+basketTotal();
 
 // const removeItemFromCart = (id) => {
 //     products.forEach(product => {
