@@ -34,8 +34,12 @@ const changeQuantity = (action, id) => {
             else if(action === 'plus'){
                 product.quantity+=1;
             }
-            renderBasket();
-            basketTotal();
+            if(product.quantity === 0){
+                removeItemFromCart(product.id);
+            }
+            // renderBasket();
+            // basketTotal();
+            updateCart();
             return {...product, quantity: product.quantity};
         };
     });
@@ -47,7 +51,6 @@ const basketTotal = () => {
     products.forEach(product => {
        totalPrice += product.discountPrice * product.quantity;
        totalShipping += product.shipping * product.quantity;
-       
     });
 
     if(totalShipping >= 500){
@@ -76,7 +79,17 @@ const basketTotal = () => {
 };
 basketTotal();
 
+const updateCart = () => {
+    renderBasket();
+    basketTotal();
+}
 
+const removeItemFromCart = (id) => {
+    let newProducts = products.filter(product => product.id !== id);
+    console.log(newProducts, 'new')
+    updateCart();
+}
+removeItemFromCart();
 
 /** TODO 
  * implement remove item function
