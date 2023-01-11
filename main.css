@@ -46,6 +46,13 @@ body #basket .basket-item-quantity {
   color: #333333;
   font-size: 0.7rem;
 }
+body #basket .basket-item-quantity button {
+  cursor: pointer;
+}
+body #basket .basket-item-quantity button:nth-child(1) {
+  /* decrement */
+  font-size: 1rem;
+}
 
 /* colors */
 /* fonts */
@@ -74,6 +81,11 @@ body #basket .basket-item-quantity {
 }
 #basket .basket-item-outer-container .basket-item-quantity button {
   border: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 3px;
+  background-color: #e0e0e0;
+  color: #828282;
 }
 
 #basket #basket-item-1-quantity {
