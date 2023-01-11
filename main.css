@@ -71,6 +71,8 @@ body #basket .basket-item-quantity button:nth-child(1) {
 #basket .basket-item-outer-container {
   display: flex;
   justify-content: space-around;
+  width: 67%;
+  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 #basket .basket-item-outer-container .basket-item-quantity {
