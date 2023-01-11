@@ -30,6 +30,7 @@ body header h1 {
   color: #4e5150;
 }
 body #basket .basket-item-info h2 {
+  color: #4e5150;
   font-size: 0.7rem;
 }
 body #basket .basket-item-info p {
@@ -40,6 +41,10 @@ body #basket .basket-item-info p span {
   font-size: 0.7rem;
   color: #4e5150;
   text-decoration: line-through;
+}
+body #basket .basket-item-quantity {
+  color: #333333;
+  font-size: 0.7rem;
 }
 
 /* colors */
@@ -64,8 +69,11 @@ body #basket .basket-item-info p span {
   justify-content: space-between;
   border: 1px solid #828282;
   border-radius: 10px;
-  padding: 7%;
-  width: 8rem;
+  padding: 10%;
+  width: 7rem;
+}
+#basket .basket-item-outer-container .basket-item-quantity button {
+  border: none;
 }
 
 #basket #basket-item-1-quantity {

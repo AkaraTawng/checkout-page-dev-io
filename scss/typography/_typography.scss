@@ -12,6 +12,7 @@ body {
     #basket {
         .basket-item-info {
             h2 {
+                color: $primary-header-semi-bold;
                 font-size: .7rem;
             }
 
@@ -24,6 +25,11 @@ body {
                     text-decoration: line-through;
                 }
             }
+        }
+
+        .basket-item-quantity {
+            color: $secondary-header-bold;
+            font-size: .7rem;
         }
     }
 }
