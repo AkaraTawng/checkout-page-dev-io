@@ -37,8 +37,18 @@
                 }
             }
         }
+
+        .basket-item-inner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .basket-item-info {
+                h2 {
+                    margin-bottom: 10%;
+                }
+            }
+        }
        
     }
-
-   
 }

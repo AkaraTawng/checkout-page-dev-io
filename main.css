@@ -93,6 +93,14 @@ body #basket .basket-item-quantity button:nth-child(1) {
 #basket .basket-item-outer-container .basket-item-quantity button:active {
   box-shadow: 0px 0px 1px 1px rgb(71, 71, 71);
 }
+#basket .basket-item-outer-container .basket-item-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#basket .basket-item-outer-container .basket-item-inner-container .basket-item-info h2 {
+  margin-bottom: 10%;
+}
 
 #basket #basket-item-1-quantity {
   display: flex;
