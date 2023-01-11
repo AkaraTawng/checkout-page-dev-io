@@ -30,8 +30,9 @@ body {
         .basket-item-quantity {
             color: $secondary-header-bold;
             font-size: .7rem;
-
+    
             button {
+                /* increment & decrement */
                 cursor: pointer;
                 &:nth-child(1) {
                 /* decrement */

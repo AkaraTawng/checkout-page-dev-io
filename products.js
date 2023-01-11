@@ -16,5 +16,5 @@ let products = [
         imgSrc: './img/shoes.png', 
         quantity: 1,
         shipping: 9.5
-    },
+    }
 ];

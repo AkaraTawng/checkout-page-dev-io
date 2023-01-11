@@ -47,6 +47,7 @@ body #basket .basket-item-quantity {
   font-size: 0.7rem;
 }
 body #basket .basket-item-quantity button {
+  /* increment & decrement */
   cursor: pointer;
 }
 body #basket .basket-item-quantity button:nth-child(1) {
@@ -70,6 +71,7 @@ body #basket .basket-item-quantity button:nth-child(1) {
 #basket .basket-item-outer-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 #basket .basket-item-outer-container .basket-item-quantity {
   display: flex;
