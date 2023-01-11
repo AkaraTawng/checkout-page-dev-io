@@ -58,6 +58,11 @@
     #totals-container {
         width: 85%;
         margin: 0 auto;
+
+        h2 {
+            padding: .8rem 0 .8rem 0;
+        }
+        
         #shipping {
             display: flex;
             align-items: center;
@@ -70,6 +75,7 @@
             align-items: center;
             justify-content: space-between;
             border-top: 1px solid #bdbdbd;
-        }
-    }
-}
+            padding-bottom: 1rem;
+        };
+    };
+};
