@@ -13,9 +13,9 @@ const renderBasket = () => {
                     <p>$${product.discountPrice} <span>$${product.oldPrice}</span></p>
                 </div>
                 <div class="basket-item-quantity">
-                    <button onclick="changeQuantity('minus', ${product.id})" id="decrement">-</button>
+                    <button onclick="changeQuantity('minus', ${product.id})" id="decrement">&minus;</button>
                     <h2 id="quantity">${product.quantity}</h2>
-                    <button onclick="changeQuantity('plus', ${product.id})" id="increment">+</button>
+                    <button onclick="changeQuantity('plus', ${product.id})" id="increment">&plus;</button>
                 </div>
             </div>
         </div>
