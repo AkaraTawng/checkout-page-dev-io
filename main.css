@@ -6,7 +6,7 @@
 body {
   position: relative;
   min-height: 100vh;
-  padding: 1rem 0.7rem 5rem 0.7rem;
+  padding: 1.8rem 0.7rem 5rem 0.7rem;
 }
 
 footer {
@@ -28,6 +28,7 @@ body {
 body header h1 {
   color: #4e5150;
   font-size: 1.5rem;
+  margin: 0 0 1rem 0.2rem;
 }
 body #basket .basket-item-info h2 {
   color: #4e5150;
