@@ -30,6 +30,15 @@ body {
         .basket-item-quantity {
             color: $secondary-header-bold;
             font-size: .7rem;
+
+            button {
+                cursor: pointer;
+                &:nth-child(1) {
+                /* decrement */
+                font-size: 1rem;
+                }
+                
+            }
         }
     }
 }
