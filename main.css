@@ -106,6 +106,10 @@ body #basket .basket-item-quantity button:nth-child(1) {
 #basket .basket-item-outer-container .basket-item-inner-container .basket-item-info h2 {
   margin-bottom: 10%;
 }
+#basket #totals-container {
+  width: 85%;
+  margin: 0 auto;
+}
 #basket #totals-container #shipping {
   border-top: 1px solid #bdbdbd;
 }
