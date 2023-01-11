@@ -116,6 +116,8 @@ body #basket #totals-container p {
 #basket #totals-container {
   width: 85%;
   margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 #basket #totals-container h2 {
   padding: 0.8rem 0 0.8rem 0;
@@ -131,7 +133,6 @@ body #basket #totals-container p {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
-  padding-bottom: 1rem;
 }
 
 #basket #basket-item-1-quantity {
