@@ -59,10 +59,14 @@
         width: 85%;
         margin: 0 auto;
         #shipping {
+            display: flex;
+            justify-content: space-between;
             border-top: 1px solid #bdbdbd;
         }
 
         #total {
+            display: flex;
+            justify-content: space-between;
             border-top: 1px solid #bdbdbd;
         }
     }
