@@ -87,6 +87,12 @@ body #basket .basket-item-quantity button:nth-child(1) {
   background-color: #e0e0e0;
   color: #828282;
 }
+#basket .basket-item-outer-container .basket-item-quantity button:hover {
+  box-shadow: 2px 3px 1px 1px rgb(71, 71, 71);
+}
+#basket .basket-item-outer-container .basket-item-quantity button:active {
+  box-shadow: 0px 0px 1px 1px rgb(71, 71, 71);
+}
 
 #basket #basket-item-1-quantity {
   display: flex;

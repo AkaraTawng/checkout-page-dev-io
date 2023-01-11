@@ -29,6 +29,12 @@
                 border-radius: 3px;
                 background-color: #e0e0e0;
                 color: $primary-text-grey;
+                &:hover {
+                    box-shadow: 2px 3px 1px 1px rgb(71, 71, 71);
+                }
+                &:active {
+                    box-shadow: 0px 0px 1px 1px rgb(71, 71, 71);
+                }
             }
         }
        
