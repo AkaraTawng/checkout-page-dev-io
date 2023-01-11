@@ -116,8 +116,7 @@ body #basket #totals-container p {
 #basket #totals-container {
   width: 85%;
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding: 3rem 0 1rem 0;
 }
 #basket #totals-container h2 {
   padding: 0.8rem 0 0.8rem 0;
