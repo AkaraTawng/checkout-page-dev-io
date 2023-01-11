@@ -112,11 +112,13 @@ body #basket .basket-item-quantity button:nth-child(1) {
 }
 #basket #totals-container #shipping {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
 }
 #basket #totals-container #total {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
 }

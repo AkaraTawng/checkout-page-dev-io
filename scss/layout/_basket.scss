@@ -60,12 +60,14 @@
         margin: 0 auto;
         #shipping {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             border-top: 1px solid #bdbdbd;
         }
 
         #total {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             border-top: 1px solid #bdbdbd;
         }
