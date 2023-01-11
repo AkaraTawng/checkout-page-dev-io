@@ -55,6 +55,13 @@ body #basket .basket-item-quantity button:nth-child(1) {
   /* decrement */
   font-size: 1rem;
 }
+body #basket #totals-container {
+  color: #333333;
+  font-size: 0.7rem;
+}
+body #basket #totals-container p {
+  font-size: 1rem;
+}
 
 /* colors */
 /* fonts */
@@ -110,6 +117,9 @@ body #basket .basket-item-quantity button:nth-child(1) {
   width: 85%;
   margin: 0 auto;
 }
+#basket #totals-container h2 {
+  padding: 0.8rem 0 0.8rem 0;
+}
 #basket #totals-container #shipping {
   display: flex;
   align-items: center;
@@ -121,6 +131,7 @@ body #basket .basket-item-quantity button:nth-child(1) {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
+  padding-bottom: 1rem;
 }
 
 #basket #basket-item-1-quantity {

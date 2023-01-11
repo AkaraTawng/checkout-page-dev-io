@@ -42,5 +42,14 @@ body {
                 }
             }
         }
+
+        #totals-container {
+            color: $secondary-header-bold;
+            font-size: .7rem;
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     }
 }
