@@ -1,4 +1,7 @@
 #checkout-form {
+    // display: flex;
+ 
+    background-color: rgb(252, 208, 126);
     input {
         width: 90%;
     }    
@@ -6,10 +9,18 @@
         border: none;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        background-color: rgb(210, 210, 255);
+        align-items: center;
     }
 
     #countries-postcode-container {
-        display: flex;
         width: 90%;
+        display: flex;
     }
+
+    #save-info-container {
+        
+    }
+    
 }

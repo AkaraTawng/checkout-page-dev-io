@@ -157,6 +157,9 @@ body #basket #totals-container p {
   border-radius: 5px;
 }
 
+#checkout-form {
+  background-color: rgb(252, 208, 126);
+}
 #checkout-form input {
   width: 90%;
 }
@@ -164,8 +167,11 @@ body #basket #totals-container p {
   border: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: rgb(210, 210, 255);
+  align-items: center;
 }
 #checkout-form #countries-postcode-container {
-  display: flex;
   width: 90%;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
