@@ -157,8 +157,14 @@ body #basket #totals-container p {
   border-radius: 5px;
 }
 
+#checkout-form input {
+  width: 90%;
+}
 #checkout-form fieldset {
   border: none;
   display: flex;
   flex-direction: column;
+}
+#checkout-form #countries-postcode-container {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
