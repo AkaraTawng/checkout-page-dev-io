@@ -12,7 +12,10 @@
         align-items: center;
 
         input {
-            width: 90%;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid $primary-text-grey;
+            height: 2rem;
         }  
     }
 

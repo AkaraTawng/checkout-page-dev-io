@@ -165,7 +165,10 @@ body #basket #totals-container p {
   align-items: center;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
-  width: 90%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #828282;
+  height: 2rem;
 }
 #checkout-form #countries-postcode-container {
   width: 90%;
