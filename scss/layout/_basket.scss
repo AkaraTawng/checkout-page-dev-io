@@ -77,4 +77,14 @@
             border-top: 1px solid #bdbdbd;
         };
     };
+
+    #empty-basket-message-container {
+        text-align: center;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+      
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
 };
