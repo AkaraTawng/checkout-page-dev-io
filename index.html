@@ -51,18 +51,42 @@
         </section>
 
         <section id="checkout-form">
-            <legend>Contact Information</legend>
             <form action="">
                 <fieldset id="contact-information">
+                    <legend>Contact Information</legend>
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="name@email.com">
+                    <input type="email" id="email" placeholder="Enter your email..">
                     
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="111222333">
+                    <input type="tel" id="phone" placeholder="Enter your phone..">
                 </fieldset>
 
                 <fieldset id="shipping-address">
                     <legend>Shipping Address</legend>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Rodney Cotton">
+                    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Your address..">
+                    
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Your city..">
+
+                    <div id="countries-postcode-container">
+                        <label for="country">Country</label>
+                        <select name="countries" id="country">
+                            <option value="" disabled selected hidden>Your Country</option>
+                            <option value="united states">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="spain">Spain</option>
+                            <option value="south korea">South Korea</option>
+                        </select>
+                        
+                        <label for="post-code">Post Code</label>
+                        <input type="text" id="post-code" placeholder="Your postal code..">
+                    </div>
+             
+                    
 
                 </fieldset>
               
