@@ -167,4 +167,5 @@ body #basket #totals-container p {
 }
 #checkout-form #countries-postcode-container {
   display: flex;
+  width: 90%;
 }/*# sourceMappingURL=main.css.map */
