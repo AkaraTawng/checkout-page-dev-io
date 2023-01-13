@@ -160,10 +160,7 @@ body #basket #totals-container p {
 #checkout-form {
   background-color: rgb(252, 208, 126);
 }
-#checkout-form input {
-  width: 90%;
-}
-#checkout-form fieldset {
+#checkout-form #shipping-address, #checkout-form #contact-information {
   border: none;
   display: flex;
   flex-direction: column;
@@ -171,7 +168,21 @@ body #basket #totals-container p {
   background-color: rgb(210, 210, 255);
   align-items: center;
 }
+#checkout-form #shipping-address input, #checkout-form #contact-information input {
+  width: 90%;
+}
 #checkout-form #countries-postcode-container {
   width: 90%;
   display: flex;
+}
+#checkout-form #save-info-container {
+  display: flex;
+  align-items: center;
+}
+#checkout-form #save-info-container input {
+  margin-right: 1%;
+}
+#checkout-form #save-info-container label {
+  font-size: 0.5rem;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

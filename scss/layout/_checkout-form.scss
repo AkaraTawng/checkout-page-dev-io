@@ -2,16 +2,18 @@
     // display: flex;
  
     background-color: rgb(252, 208, 126);
-    input {
-        width: 90%;
-    }    
-    fieldset {
+        
+    #shipping-address, #contact-information {
         border: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         background-color: rgb(210, 210, 255);
         align-items: center;
+
+        input {
+            width: 90%;
+        }  
     }
 
     #countries-postcode-container {
@@ -20,7 +22,16 @@
     }
 
     #save-info-container {
+        display: flex;
+        align-items: center;
+
+        input {
+        margin-right: 1%;
+        }
         
-    }
-    
+        label {
+        font-size: .5rem;
+        width: 100%;
+        }
+    } 
 }
