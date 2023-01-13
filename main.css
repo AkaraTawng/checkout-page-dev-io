@@ -157,15 +157,11 @@ body #basket #totals-container p {
   border-radius: 5px;
 }
 
-#checkout-form {
-  background-color: rgb(252, 208, 126);
-}
 #checkout-form #shipping-address, #checkout-form #contact-information {
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(210, 210, 255);
   align-items: center;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
@@ -185,4 +181,7 @@ body #basket #totals-container p {
 #checkout-form #save-info-container label {
   font-size: 0.5rem;
   width: 100%;
+}
+#checkout-form #submit-btn {
+  float: right;
 }/*# sourceMappingURL=main.css.map */

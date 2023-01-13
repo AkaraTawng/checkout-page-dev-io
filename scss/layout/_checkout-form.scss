@@ -1,14 +1,14 @@
 #checkout-form {
     // display: flex;
  
-    background-color: rgb(252, 208, 126);
+    // background-color: rgb(252, 208, 126);
         
     #shipping-address, #contact-information {
         border: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgb(210, 210, 255);
+        // background-color: rgb(210, 210, 255);
         align-items: center;
 
         input {
@@ -28,10 +28,14 @@
         input {
         margin-right: 1%;
         }
-        
+
         label {
         font-size: .5rem;
         width: 100%;
         }
     } 
+
+    #submit-btn {
+        float: right;
+    }
 }
