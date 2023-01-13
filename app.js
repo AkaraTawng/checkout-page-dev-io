@@ -53,8 +53,7 @@ const basketTotal = () => {
     if(totalShipping >= 500){
         basketTotalContainer.innerHTML = `
         <div id="shipping">
-            <h2>Shipping</h2>
-            <p>Free Shipping! 🥳</p>
+            <h2>Free Shipping! 🥳</h2>
         </div>
         <div id="total">
             <h2>Total</h2>
@@ -77,7 +76,7 @@ const basketTotal = () => {
     if(totalPrice === 0) {
         basketTotalContainer.innerHTML = `
             <div id="empty-basket-message-container">
-              <p>Your basket is empty. Please refresh your web browser to refil your basket.</p>
+             <h2>Your basket is empty! 🛒<h2>  <p>Please refresh your web browser to refill your basket.</p>
             </div>
     `
       };
