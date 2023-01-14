@@ -18,35 +18,7 @@
             height: 2rem;
         }  
 
-        #email-input-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 100%;
-             input {
-                padding-left: 2.7rem;
-             }
-            span {
-                position: absolute;
-                padding-left: .5rem;
-            }
-        }
-
-        #phone-input-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: 100%;
-             input {
-                padding-left: 2.7rem;
-             }
-            span {
-                position: absolute;
-                padding-left: .5rem;
-            }
-        }
-
-        #name-input-container {
+        #icon-input-container {
             position: relative;
             display: flex;
             align-items: center;
