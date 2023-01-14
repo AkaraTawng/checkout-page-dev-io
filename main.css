@@ -175,6 +175,13 @@ body #basket #totals-container p {
   display: flex;
   align-items: center;
 }
+#checkout-form #shipping-address #email-input-container input, #checkout-form #contact-information #email-input-container input {
+  padding-left: 2.2rem;
+}
+#checkout-form #shipping-address #email-input-container span, #checkout-form #contact-information #email-input-container span {
+  position: absolute;
+  padding-left: 0.5rem;
+}
 #checkout-form #countries-postcode-container {
   width: 90%;
   display: flex;

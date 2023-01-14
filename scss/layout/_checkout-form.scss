@@ -22,8 +22,12 @@
             position: relative;
             display: flex;
             align-items: center;
+             input {
+                padding-left: 2.2rem;
+             }
             span {
-                // position: absolute;
+                position: absolute;
+                padding-left: .5rem;
                 // bottom: 0;
                 // padding: 0 3% 0 3%;
             }
