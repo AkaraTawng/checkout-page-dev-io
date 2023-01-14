@@ -22,14 +22,27 @@
             position: relative;
             display: flex;
             align-items: center;
+            width: 100%;
              input {
-                padding-left: 2.2rem;
+                padding-left: 2.7rem;
              }
             span {
                 position: absolute;
                 padding-left: .5rem;
-                // bottom: 0;
-                // padding: 0 3% 0 3%;
+            }
+        }
+
+        #phone-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+             input {
+                padding-left: 2.7rem;
+             }
+            span {
+                position: absolute;
+                padding-left: .5rem;
             }
         }
     }

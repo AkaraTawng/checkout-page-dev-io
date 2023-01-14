@@ -174,11 +174,25 @@ body #basket #totals-container p {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 #checkout-form #shipping-address #email-input-container input, #checkout-form #contact-information #email-input-container input {
-  padding-left: 2.2rem;
+  padding-left: 2.7rem;
 }
 #checkout-form #shipping-address #email-input-container span, #checkout-form #contact-information #email-input-container span {
+  position: absolute;
+  padding-left: 0.5rem;
+}
+#checkout-form #shipping-address #phone-input-container, #checkout-form #contact-information #phone-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#checkout-form #shipping-address #phone-input-container input, #checkout-form #contact-information #phone-input-container input {
+  padding-left: 2.7rem;
+}
+#checkout-form #shipping-address #phone-input-container span, #checkout-form #contact-information #phone-input-container span {
   position: absolute;
   padding-left: 0.5rem;
 }
