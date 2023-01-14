@@ -170,6 +170,11 @@ body #basket #totals-container p {
   border: 1px solid #828282;
   height: 2rem;
 }
+#checkout-form #shipping-address #email-input-container, #checkout-form #contact-information #email-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 #checkout-form #countries-postcode-container {
   width: 90%;
   display: flex;

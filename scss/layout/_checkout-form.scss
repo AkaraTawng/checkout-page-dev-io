@@ -17,6 +17,17 @@
             border: 1px solid $primary-text-grey;
             height: 2rem;
         }  
+
+        #email-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            span {
+                // position: absolute;
+                // bottom: 0;
+                // padding: 0 3% 0 3%;
+            }
+        }
     }
 
     #countries-postcode-container {
