@@ -62,6 +62,10 @@ body #basket #totals-container {
 body #basket #totals-container p {
   font-size: 1rem;
 }
+body #checkout-form label {
+  font-size: 0.7rem;
+}
+
 /* colors */
 /* fonts */
 #basket {
@@ -169,6 +173,7 @@ body #basket #totals-container p {
 }
 #checkout-form #shipping-address label, #checkout-form #contact-information label {
   margin-top: 1rem;
+  margin-bottom: 0.3rem;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
   width: 100%;
