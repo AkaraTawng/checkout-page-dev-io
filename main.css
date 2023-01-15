@@ -197,7 +197,7 @@ body #checkout-form select {
   width: 100%;
 }
 #checkout-form #shipping-address #icon-input-container input, #checkout-form #contact-information #icon-input-container input {
-  padding-left: 2.7rem;
+  padding-left: 2rem;
 }
 #checkout-form #shipping-address #icon-input-container span, #checkout-form #contact-information #icon-input-container span {
   position: absolute;
