@@ -266,6 +266,9 @@ body #checkout-form select {
 #checkout-form #save-info-container label {
   font-size: 0.5rem;
   width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
   display: flex;
 }
