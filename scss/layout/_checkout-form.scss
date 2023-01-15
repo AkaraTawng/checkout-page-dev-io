@@ -47,7 +47,7 @@
             width: 100%;
 
             select {
-                padding-left: 2rem;
+                padding-left: 1.5rem;
                 background-color: white;
                 border-radius: 10px;
                 height: 2rem;
@@ -65,9 +65,9 @@
             position: relative;
             display: flex;
             align-items: center;
-             
+            width: 8rem;
             input {
-                padding-left: 2rem;
+                padding-left: 1.5rem;
              }
             
              span {
@@ -79,11 +79,13 @@
     }
 
     #countries-postcode-container {
-        width: 100%;
+        // width: 100%;
+        background-color: aliceblue;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        // flex-wrap: nowrap;
         margin-top: 1rem;
+        justify-content: space-between;
     }
 
     #save-info-container {
@@ -105,7 +107,7 @@
     }
 
     #postcode-container {
-
+        margin-left: 2rem;
     }
 
     #submit-btn {

@@ -211,7 +211,7 @@ body #checkout-form select {
   width: 100%;
 }
 #checkout-form #shipping-address #country-input-container select, #checkout-form #contact-information #country-input-container select {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   background-color: white;
   border-radius: 10px;
   height: 2rem;
@@ -226,9 +226,10 @@ body #checkout-form select {
   position: relative;
   display: flex;
   align-items: center;
+  width: 8rem;
 }
 #checkout-form #shipping-address #postcode-input-container input, #checkout-form #contact-information #postcode-input-container input {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 #checkout-form #shipping-address #postcode-input-container span, #checkout-form #contact-information #postcode-input-container span {
   position: absolute;
@@ -236,11 +237,11 @@ body #checkout-form select {
   color: #828282;
 }
 #checkout-form #countries-postcode-container {
-  width: 100%;
+  background-color: aliceblue;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   margin-top: 1rem;
+  justify-content: space-between;
 }
 #checkout-form #save-info-container {
   display: flex;
@@ -252,6 +253,9 @@ body #checkout-form select {
 #checkout-form #save-info-container label {
   font-size: 0.5rem;
   width: 100%;
+}
+#checkout-form #postcode-container {
+  margin-left: 2rem;
 }
 #checkout-form #submit-btn {
   float: right;
