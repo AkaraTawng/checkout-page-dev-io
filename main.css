@@ -161,6 +161,10 @@ body #basket #totals-container p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #4f4f4f;
+}
+#checkout-form #shipping-address legend, #checkout-form #contact-information legend {
+  color: #333333;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
   width: 100%;
@@ -180,6 +184,7 @@ body #basket #totals-container p {
 #checkout-form #shipping-address #icon-input-container span, #checkout-form #contact-information #icon-input-container span {
   position: absolute;
   padding-left: 0.5rem;
+  color: #828282;
 }
 #checkout-form #shipping-address #country-input-container, #checkout-form #contact-information #country-input-container {
   position: relative;
@@ -196,6 +201,7 @@ body #basket #totals-container p {
 #checkout-form #shipping-address #country-input-container span, #checkout-form #contact-information #country-input-container span {
   position: absolute;
   padding-left: 0.3rem;
+  color: #828282;
 }
 #checkout-form #shipping-address #postcode-input-container, #checkout-form #contact-information #postcode-input-container {
   position: relative;
@@ -208,6 +214,7 @@ body #basket #totals-container p {
 #checkout-form #shipping-address #postcode-input-container span, #checkout-form #contact-information #postcode-input-container span {
   position: absolute;
   padding-left: 0.3rem;
+  color: #828282;
 }
 #checkout-form #countries-postcode-container {
   width: 100%;
