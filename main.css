@@ -62,7 +62,6 @@ body #basket #totals-container {
 body #basket #totals-container p {
   font-size: 1rem;
 }
-
 /* colors */
 /* fonts */
 #basket {
@@ -162,7 +161,6 @@ body #basket #totals-container p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
   width: 100%;

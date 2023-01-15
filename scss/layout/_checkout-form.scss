@@ -4,15 +4,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // background-color: rgb(210, 210, 255);
-        align-items: center;
 
         input {
             width: 100%;
             border-radius: 8px;
             border: 1px solid $primary-text-grey;
             height: 2rem;
-        }  
+        } 
 
         #icon-input-container {
             position: relative;
