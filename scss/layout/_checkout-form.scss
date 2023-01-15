@@ -101,6 +101,16 @@
         input {
             cursor: pointer;
             opacity: 0;
+
+            &:checked + label::before {
+                background-color: $accent-orange;
+                content: '\002714';
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $accent-orange;
+            }
         }
 
         label {
@@ -109,11 +119,17 @@
         cursor: pointer;
         display: flex;
 
+      &:hover::before {
+        background-color: $accent-orange;
+      }
+
         &::before {
             content: '';
             height: .6rem;
             width: .6rem;
             border: 1px solid $primary-text-grey;
+            border-radius: 2.5px;
+            margin-right: .4rem;
         }
         }
     } 
