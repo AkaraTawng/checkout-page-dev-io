@@ -11,6 +11,10 @@
             margin-top: 2rem;
         }
 
+        label {
+            margin-top: 1rem;
+        }
+        
         input {
             width: 100%;
             border-radius: 8px;
@@ -77,6 +81,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-top: 1rem;
     }
 
     #save-info-container {

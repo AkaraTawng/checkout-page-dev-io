@@ -167,6 +167,9 @@ body #basket #totals-container p {
   color: #333333;
   margin-top: 2rem;
 }
+#checkout-form #shipping-address label, #checkout-form #contact-information label {
+  margin-top: 1rem;
+}
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
   width: 100%;
   border-radius: 8px;
@@ -222,6 +225,7 @@ body #basket #totals-container p {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 1rem;
 }
 #checkout-form #save-info-container {
   display: flex;
