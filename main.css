@@ -165,6 +165,7 @@ body #basket #totals-container p {
 }
 #checkout-form #shipping-address legend, #checkout-form #contact-information legend {
   color: #333333;
+  margin-top: 2rem;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
   width: 100%;
