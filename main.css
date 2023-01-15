@@ -65,6 +65,9 @@ body #basket #totals-container p {
 body #checkout-form label {
   font-size: 0.7rem;
 }
+body #checkout-form span {
+  font-size: 1rem;
+}
 
 /* colors */
 /* fonts */
