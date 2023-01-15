@@ -1,8 +1,4 @@
 #checkout-form {
-    // display: flex;
- 
-    // background-color: rgb(252, 208, 126);
-        
     #shipping-address, #contact-information {
         border: none;
         display: flex;
@@ -23,19 +19,57 @@
             display: flex;
             align-items: center;
             width: 100%;
-             input {
+            
+            input {
                 padding-left: 2.7rem;
              }
-            span {
+            
+             span {
                 position: absolute;
                 padding-left: .5rem;
+            }
+        }
+
+        #country-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            select {
+                padding-left: 2rem;
+                background-color: white;
+                border-radius: 10px;
+                height: 2rem;
+             }
+
+             span {
+                position: absolute;
+                padding-left: .3rem;
+            }
+        }
+
+        #postcode-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+             
+            input {
+                padding-left: 2rem;
+             }
+            
+             span {
+                position: absolute;
+                padding-left: .3rem;
             }
         }
     }
 
     #countries-postcode-container {
-        width: 90%;
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     #save-info-container {
@@ -51,6 +85,14 @@
         width: 100%;
         }
     } 
+
+    #country-container {
+
+    }
+
+    #postcode-container {
+
+    }
 
     #submit-btn {
         float: right;
