@@ -169,6 +169,9 @@ body #checkout-form select {
   border-radius: 5px;
 }
 
+#checkout-form .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
 #checkout-form #shipping-address, #checkout-form #contact-information {
   border: none;
   display: flex;
@@ -237,7 +240,6 @@ body #checkout-form select {
   color: #828282;
 }
 #checkout-form #countries-postcode-container {
-  background-color: aliceblue;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
@@ -248,11 +250,20 @@ body #checkout-form select {
   align-items: center;
 }
 #checkout-form #save-info-container input {
-  margin-right: 1%;
+  cursor: pointer;
+  opacity: 0;
 }
 #checkout-form #save-info-container label {
   font-size: 0.5rem;
   width: 100%;
+  cursor: pointer;
+  display: flex;
+}
+#checkout-form #save-info-container label::before {
+  content: "";
+  height: 0.6rem;
+  width: 0.6rem;
+  border: 1px solid #828282;
 }
 #checkout-form #postcode-container {
   margin-left: 2rem;

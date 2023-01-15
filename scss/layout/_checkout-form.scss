@@ -1,4 +1,13 @@
 #checkout-form {
+    
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL'  1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+    }
+
     #shipping-address, #contact-information {
         border: none;
         display: flex;
@@ -79,11 +88,8 @@
     }
 
     #countries-postcode-container {
-        // width: 100%;
-        background-color: aliceblue;
         display: flex;
         flex-direction: row;
-        // flex-wrap: nowrap;
         margin-top: 1rem;
         justify-content: space-between;
     }
@@ -91,14 +97,24 @@
     #save-info-container {
         display: flex;
         align-items: center;
-
+      
         input {
-        margin-right: 1%;
+            cursor: pointer;
+            opacity: 0;
         }
 
         label {
         font-size: .5rem;
         width: 100%;
+        cursor: pointer;
+        display: flex;
+
+        &::before {
+            content: '';
+            height: .6rem;
+            width: .6rem;
+            border: 1px solid $primary-text-grey;
+        }
         }
     } 
 
