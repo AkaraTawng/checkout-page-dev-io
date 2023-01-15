@@ -71,6 +71,9 @@ body #checkout-form span {
 body #checkout-form input {
   font-size: 0.7rem;
 }
+body #checkout-form select {
+  font-size: 0.7rem;
+}
 
 /* colors */
 /* fonts */
@@ -212,6 +215,7 @@ body #checkout-form input {
   background-color: white;
   border-radius: 10px;
   height: 2rem;
+  color: #828282;
 }
 #checkout-form #shipping-address #country-input-container span, #checkout-form #contact-information #country-input-container span {
   position: absolute;
