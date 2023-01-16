@@ -1,5 +1,5 @@
 #checkout-form {
-    
+    margin-bottom: 5rem;
     .material-symbols-outlined {
     font-variation-settings:
     'FILL'  1,
@@ -145,5 +145,27 @@
 
     #submit-btn {
         float: right;
+        background-color: $accent-orange;
+        border-radius: 7px;
+        border: none;
+        height: 2.4rem;
+        width: 8rem;
+        color: white;
+        margin-right: 4%;
+        margin-top: 4%;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $primary-text-grey;
+            background-color: rgb(255, 255, 255);
+            color: $accent-orange;
+            transition: all ease .5s;
+            box-shadow: 1px 1px 1px 1px rgb(123, 123, 123);
+        }
+
+        &:active {
+            box-shadow: 0px 0px 1px .5px rgb(123, 123, 123);
+            transition: box-shadow ease .1s;
+        }
     }
 }

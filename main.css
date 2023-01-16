@@ -170,6 +170,9 @@ body #checkout-form select {
   border-radius: 5px;
 }
 
+#checkout-form {
+  margin-bottom: 5rem;
+}
 #checkout-form .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
@@ -288,4 +291,24 @@ body #checkout-form select {
 }
 #checkout-form #submit-btn {
   float: right;
+  background-color: #f2994a;
+  border-radius: 7px;
+  border: none;
+  height: 2.4rem;
+  width: 8rem;
+  color: white;
+  margin-right: 4%;
+  margin-top: 4%;
+  cursor: pointer;
+}
+#checkout-form #submit-btn:hover {
+  border: 1px solid #828282;
+  background-color: rgb(255, 255, 255);
+  color: #f2994a;
+  transition: all ease 0.5s;
+  box-shadow: 1px 1px 1px 1px rgb(123, 123, 123);
+}
+#checkout-form #submit-btn:active {
+  box-shadow: 0px 0px 1px 0.5px rgb(123, 123, 123);
+  transition: box-shadow ease 0.1s;
 }/*# sourceMappingURL=main.css.map */
