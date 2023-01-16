@@ -113,7 +113,8 @@ body #checkout-form select {
   color: #828282;
 }
 #basket .basket-item-outer-container .basket-item-quantity button:hover {
-  box-shadow: 2px 3px 1px 1px rgb(71, 71, 71);
+  box-shadow: 1px 2px 1px 1px rgb(71, 71, 71);
+  transition: all ease 0.1s;
 }
 #basket .basket-item-outer-container .basket-item-quantity button:active {
   box-shadow: 0px 0px 1px 1px rgb(71, 71, 71);
