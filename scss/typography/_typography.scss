@@ -6,7 +6,7 @@ body {
     header {
         h1 {
             color: $primary-header-semi-bold;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
             margin: 0 0 1rem .2rem;
         }
     }
@@ -54,6 +54,11 @@ body {
     }
 
     #checkout-form {
+
+        legend {
+            font-size: 1rem;
+            font-size: clamp(1rem, 0.94rem + 0.3vw, 1.3rem);
+        }
         label {
             font-size: .7rem;
         }
