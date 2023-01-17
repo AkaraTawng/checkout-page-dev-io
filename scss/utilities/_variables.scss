@@ -11,46 +11,46 @@ $ms: 'Montserrat', sans-serif;
 
 /* breakpoints */
 $breakpoints: (
-    "mobile-m": 400,
-    "mobile-l": 480,
-    "tablet": 768,
-    "laptop": 1280,
-    "desktop": 1530,
-    "desktop-lg": 1920,
+    "mobile-m": 400px,
+    "mobile-l": 480px,
+    "tablet": 768px,
+    "laptop": 1280px,
+    "desktop": 1530px,
+    "desktop-lg": 1920px,
 );
 
 @mixin mobile-m {
-    @media screen and (min-width: mobile-m) {
-        @content;
-    };
+    @media screen and (min-width: "mobile-m") {
+        @content
+    }
 };
 
 @mixin mobile-l {
-    @media screen and (min-width: mobile-l) {
-        @content;
-    };
+    @media screen and (min-width: "mobile-l") {
+        @content
+    }
 };
 
 @mixin tablet {
-    @media screen and (min-width: tablet) {
-        @content;
-    };
+    @media screen and (min-width: map-get($breakpoints, "tablet")) {
+        @content
+    }
 };
 
 @mixin laptop {
-    @media screen and (min-width: laptop) {
-        @content;
-    };
+    @media screen and (min-width:  map-get($breakpoints, "laptop")) {
+        @content
+    }
 };
 
 @mixin desktop {
-    @media screen and (min-width: desktop) {
-        @content;
-    };
+    @media screen and (min-width:  map-get($breakpoints, "desktop")) {
+        @content
+    }
 };
 
 @mixin desktop-lg {
-    @media screen and (min-width: desktop-lg) {
-        @content;
+    @media screen and (min-width: map-get($breakpoints, "desktop-lg")) {
+        @content
     }
 }
