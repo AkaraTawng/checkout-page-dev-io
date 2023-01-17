@@ -60,7 +60,7 @@ body {
             font-size: clamp(1rem, 0.94rem + 0.3vw, 1.3rem);
         }
         label {
-            font-size: .7rem;
+            font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
         }
 
         span {
