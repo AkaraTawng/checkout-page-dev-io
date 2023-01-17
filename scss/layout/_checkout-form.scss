@@ -29,7 +29,7 @@
             width: 100%;
             border-radius: 8px;
             border: 1px solid $primary-text-grey;
-            height: 2rem;
+            height: clamp(2rem, 1.8rem + 1vw, 3rem);
         } 
 
         #icon-input-container {
