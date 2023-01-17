@@ -12,6 +12,7 @@ body {
 
 /* colors */
 /* fonts */
+/* breakpoints */
 footer {
   height: 3rem;
   display: flex;
@@ -30,6 +31,7 @@ footer a {
 
 /* colors */
 /* fonts */
+/* breakpoints */
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -89,6 +91,7 @@ body footer {
 
 /* colors */
 /* fonts */
+/* breakpoints */
 #basket {
   background-color: #f2f2f2;
   border-radius: 15px;
