@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* colors */
+/* fonts */
+/* breakpoints */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,6 +11,12 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 1.8rem 0.7rem 5rem 0.7rem;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 1.8rem 6rem 5rem 6rem;
+  }
 }
 
 /* colors */
@@ -38,7 +47,7 @@ body {
 }
 body header h1 {
   color: #4e5150;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
   margin: 0 0 1rem 0.2rem;
 }
 body #basket .basket-item-info h2 {
@@ -73,8 +82,12 @@ body #basket #totals-container {
 body #basket #totals-container p {
   font-size: 1rem;
 }
+body #checkout-form legend {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.94rem + 0.3vw, 1.3rem);
+}
 body #checkout-form label {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
 }
 body #checkout-form span {
   font-size: 1rem;
@@ -92,6 +105,16 @@ body footer {
 /* colors */
 /* fonts */
 /* breakpoints */
+/* colors */
+/* fonts */
+/* breakpoints */
+@media screen and (min-width: 1280px) {
+  #basket-form-flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 #basket {
   background-color: #f2f2f2;
   border-radius: 15px;
