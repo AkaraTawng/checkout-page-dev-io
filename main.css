@@ -235,6 +235,15 @@ body footer {
   border: 1px solid #828282;
   height: clamp(2rem, 1.8rem + 1vw, 3rem);
 }
+#checkout-form #shipping-address input::-moz-placeholder, #checkout-form #contact-information input::-moz-placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
+#checkout-form #shipping-address input:-ms-input-placeholder, #checkout-form #contact-information input:-ms-input-placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
+#checkout-form #shipping-address input::placeholder, #checkout-form #contact-information input::placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
 #checkout-form #shipping-address #icon-input-container, #checkout-form #contact-information #icon-input-container {
   position: relative;
   display: flex;

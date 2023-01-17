@@ -30,6 +30,10 @@
             border-radius: 8px;
             border: 1px solid $primary-text-grey;
             height: clamp(2rem, 1.8rem + 1vw, 3rem);
+
+            &::placeholder {
+                font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+            }
         } 
 
         #icon-input-container {
