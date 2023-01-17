@@ -20,7 +20,37 @@ $breakpoints: (
 );
 
 @mixin mobile-m {
-    @media screen {
-        
+    @media screen and (min-width: mobile-m) {
+        @content;
+    };
+};
+
+@mixin mobile-l {
+    @media screen and (min-width: mobile-l) {
+        @content;
+    };
+};
+
+@mixin tablet {
+    @media screen and (min-width: tablet) {
+        @content;
+    };
+};
+
+@mixin laptop {
+    @media screen and (min-width: laptop) {
+        @content;
+    };
+};
+
+@mixin desktop {
+    @media screen and (min-width: desktop) {
+        @content;
+    };
+};
+
+@mixin desktop-lg {
+    @media screen and (min-width: desktop-lg) {
+        @content;
     }
 }
