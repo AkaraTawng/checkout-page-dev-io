@@ -10,6 +10,8 @@ body {
   padding: 1.8rem 0.7rem 5rem 0.7rem;
 }
 
+/* colors */
+/* fonts */
 footer {
   height: 3rem;
   display: flex;
@@ -18,6 +20,12 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: #bdbdbd;
+  font-weight: 600;
+}
+footer a {
+  color: #a4a4a4;
+  font-weight: 700;
 }
 
 /* colors */
@@ -74,6 +82,9 @@ body #checkout-form input {
 }
 body #checkout-form select {
   font-size: 0.7rem;
+}
+body footer {
+  font-size: 0.6rem;
 }
 
 /* colors */

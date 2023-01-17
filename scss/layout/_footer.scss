@@ -1,3 +1,5 @@
+@import '../utilities/variables';
+
 footer {
     height: 3rem;
     display: flex;
@@ -6,5 +8,13 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: $footer-grey;
+    font-weight: 600;
+
+    a{
+        color: darken($footer-grey, 10%);
+        font-weight: 700;
+
+    }
 }
 
