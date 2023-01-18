@@ -32,6 +32,7 @@
             height: clamp(2rem, 1.8rem + 1vw, 3rem);
 
             &::placeholder {
+                /* move into typography */
                 font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
             }
         } 
@@ -118,6 +119,7 @@
         }
 
         label {
+            /* move into typography */
         font-size: .5rem;
         font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
         width: 100%;

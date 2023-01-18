@@ -90,7 +90,7 @@ body #checkout-form label {
   font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
 }
 body #checkout-form span {
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
 }
 body #checkout-form input {
   font-size: 0.7rem;
@@ -236,12 +236,15 @@ body footer {
   height: clamp(2rem, 1.8rem + 1vw, 3rem);
 }
 #checkout-form #shipping-address input::-moz-placeholder, #checkout-form #contact-information input::-moz-placeholder {
+  /* move into typography */
   font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 }
 #checkout-form #shipping-address input:-ms-input-placeholder, #checkout-form #contact-information input:-ms-input-placeholder {
+  /* move into typography */
   font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 }
 #checkout-form #shipping-address input::placeholder, #checkout-form #contact-information input::placeholder {
+  /* move into typography */
   font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 }
 #checkout-form #shipping-address #icon-input-container, #checkout-form #contact-information #icon-input-container {
@@ -314,6 +317,7 @@ body footer {
   border: 1px solid #f2994a;
 }
 #checkout-form #save-info-container label {
+  /* move into typography */
   font-size: 0.5rem;
   font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
   width: 100%;
