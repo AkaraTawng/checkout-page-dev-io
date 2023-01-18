@@ -52,14 +52,16 @@ body header h1 {
 }
 body #basket .basket-item-info h2 {
   color: #4e5150;
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
+  color: cadetblue;
 }
 body #basket .basket-item-info p {
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 0.86rem + 0.2vw, 1.1rem);
   color: #f2994a;
 }
 body #basket .basket-item-info p span {
   font-size: 0.7rem;
+  font-size: clamp(0.9rem, 0.9rem + 0vw, 0.9rem);
   color: #4e5150;
   text-decoration: line-through;
 }
