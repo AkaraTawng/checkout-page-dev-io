@@ -20,13 +20,13 @@ $breakpoints: (
 );
 
 @mixin mobile-m {
-    @media screen and (min-width: "mobile-m") {
+    @media screen and (min-width: map-get($breakpoints, "mobile-m")) {
         @content
     }
 };
 
 @mixin mobile-l {
-    @media screen and (min-width: "mobile-l") {
+    @media screen and (min-width: map-get($breakpoints, "mobile-l")) {
         @content
     }
 };
