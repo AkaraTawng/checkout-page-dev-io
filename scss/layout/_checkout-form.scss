@@ -1,5 +1,8 @@
 #checkout-form {
     margin-bottom: 5rem;
+    @include laptop {
+        width: 40%;
+    }
     .material-symbols-outlined {
     font-variation-settings:
     'FILL'  1,
