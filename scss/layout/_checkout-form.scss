@@ -119,6 +119,7 @@
 
         label {
         font-size: .5rem;
+        font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
         width: 100%;
         width: fit-content;
         cursor: pointer;
@@ -130,8 +131,8 @@
 
         &::before {
             content: '';
-            height: .6rem;
-            width: .6rem;
+            height: clamp(0.6rem, 0.54rem + 0.3vw, 0.9rem);
+            width: clamp(0.6rem, 0.54rem + 0.3vw, 0.9rem);
             border: 1px solid $primary-text-grey;
             border-radius: 2.5px;
             margin-right: .4rem;
