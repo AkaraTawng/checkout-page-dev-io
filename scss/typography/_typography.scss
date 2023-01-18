@@ -15,16 +15,14 @@ body {
         .basket-item-info {
             h2 {
                 color: $primary-header-semi-bold;
-                font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
-                color: cadetblue;
+                font-size: clamp(0.8rem, 0.64rem + 0.3vw, 1rem);
             }
 
             p {
                 font-size: clamp(0.9rem, 0.86rem + 0.2vw, 1.1rem);
                 color: $accent-orange;
                 span {
-                    font-size: .7rem;
-                    font-size: clamp(0.9rem, 0.9rem + 0vw, 0.9rem);
+                    font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 
                     color: $primary-header-semi-bold;
                     text-decoration: line-through;
