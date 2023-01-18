@@ -4,6 +4,9 @@
     @include laptop {
         display: flex; 
         flex-direction: row-reverse;
+        // background-color: rgb(184, 184, 255);
+        width: 65%;
+        margin: 0 auto;
     }
 }
 
