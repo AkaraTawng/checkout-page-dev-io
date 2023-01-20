@@ -119,6 +119,10 @@ body #checkout-form select {
 body footer {
   font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
 }
+body #save-info-container label {
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
+}
 
 /* colors */
 /* fonts */
@@ -378,9 +382,6 @@ body footer {
   border: 1px solid #f2994a;
 }
 #checkout-form #save-info-container label {
-  /* move into typography */
-  font-size: 0.5rem;
-  font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
   width: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
