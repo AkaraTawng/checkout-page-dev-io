@@ -106,9 +106,14 @@
         text-align: center;
         margin-top: -2rem;
         margin-bottom: 2rem;
-      
+        white-space: pre-line;
+        width: 100%;
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: .7rem;
         }
     }
 };
