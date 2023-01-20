@@ -1,5 +1,24 @@
+#header-form-container{
+    display: flex;
+    width: fit-content;
+    flex-direction:column;
+    // background-color: aquamarine;
+    margin: 0 auto;
+    h1 {
+        padding-left: .5rem;
+        @include laptop {
+            padding-left: 2rem;
+        }
+    }
+}
+
 #checkout-form {
+   
+    width: 18.5rem;
+    // width: 50%;
+    margin: 0 auto;
     margin-bottom: 5rem;
+    // background-color: blue;
     @include laptop {
         width: 40%;
     }
@@ -29,15 +48,12 @@
         }
         
         input {
-            width: 17rem;
+            // width: 17rem;
+            // width: clamp(17rem, 15.4rem + 8vw, 25rem);
+            width: 100%;
             border-radius: 8px;
             border: 1px solid $primary-text-grey;
             height: clamp(2rem, 1.8rem + 1vw, 3rem);
-
-            &::placeholder {
-                /* move into typography */
-                font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
-            }
         } 
 
         #icon-input-container {
@@ -72,6 +88,9 @@
                 height: clamp(2rem, 1.8rem + 1vw, 3rem);
                 color: $primary-text-grey;
                 width: 8rem;
+                @include laptop {
+                    width: 8.7rem;
+                }
              }
 
              span {
@@ -88,6 +107,10 @@
             input {
                 padding-left: 1.5rem;
                 width: 8rem;
+                @include laptop {
+                    width: 8.7rem;
+                    width: 8.9rem;
+                }
              }
             
              span {
@@ -104,12 +127,14 @@
         margin-top: 1rem;
         justify-content: space-between;
         // background: blue;
-        width: 17rem;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     #save-info-container {
         display: flex;
         align-items: center;
+        margin-bottom: 1rem;
       
         input {
             cursor: pointer;
