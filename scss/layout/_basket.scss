@@ -4,7 +4,6 @@
     @include laptop {
         display: flex; 
         flex-direction: row-reverse;
-        // background-color: rgb(184, 184, 255);
         width: 50rem;
         margin: 0 auto;
     }
@@ -17,9 +16,7 @@
     margin: 0 auto;
     padding: 1.3rem 1.3rem 0 1.3rem;
     white-space: nowrap;
-    // width: 18.3rem;
     width: clamp(18.3rem, 16.56rem + 8.7vw, 27rem);
-    // width: fit-content !important;
     @include laptop {
         height: 100%;
         width: 25rem;

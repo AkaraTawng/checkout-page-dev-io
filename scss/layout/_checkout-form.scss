@@ -2,7 +2,6 @@
     display: flex;
     width: fit-content;
     flex-direction:column;
-    // background-color: aquamarine;
     margin: 0 auto;
     h1 {
         padding-left: .5rem;
@@ -13,12 +12,9 @@
 }
 
 #checkout-form {
-   
     width: 18.5rem;
-    // width: 50%;
     margin: 0 auto;
     margin-bottom: 5rem;
-    // background-color: blue;
     @include laptop {
         width: 40%;
     }
@@ -48,8 +44,6 @@
         }
         
         input {
-            // width: 17rem;
-            // width: clamp(17rem, 15.4rem + 8vw, 25rem);
             width: 100%;
             border-radius: 8px;
             border: 1px solid $primary-text-grey;
@@ -77,9 +71,6 @@
             position: relative;
             display: flex;
             align-items: center;
-            // width: 90%;
-            // background: blue;
-            
 
             select {
                 padding-left: 1.5rem;
@@ -126,7 +117,6 @@
         flex-direction: row;
         margin-top: 1rem;
         justify-content: space-between;
-        // background: blue;
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -152,9 +142,6 @@
         }
 
         label {
-            /* move into typography */
-        font-size: .5rem;
-        font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
         width: 100%;
         width: fit-content;
         cursor: pointer;
@@ -171,17 +158,9 @@
             border: 1px solid $primary-text-grey;
             border-radius: 2.5px;
             margin-right: .4rem;
-        }
+            }
         }
     } 
-
-    #country-container {
-
-    }
-
-    #postcode-container {
-        // margin-left: 2rem;
-    }
 
     #submit-btn {
         float: right;
