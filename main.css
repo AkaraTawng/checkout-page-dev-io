@@ -93,13 +93,31 @@ body #checkout-form span {
   font-size: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
 }
 body #checkout-form input {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.64rem + 0.3vw, 1rem);
+}
+body #checkout-form input::-moz-placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
+body #checkout-form input:-ms-input-placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
+body #checkout-form input::placeholder {
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
+}
+body #checkout-form input#post-code::-moz-placeholder {
+  font-size: clamp(0.7rem, 0.67rem + 0.15vw, 0.85rem);
+}
+body #checkout-form input#post-code:-ms-input-placeholder {
+  font-size: clamp(0.7rem, 0.67rem + 0.15vw, 0.85rem);
+}
+body #checkout-form input#post-code::placeholder {
+  font-size: clamp(0.7rem, 0.67rem + 0.15vw, 0.85rem);
 }
 body #checkout-form select {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 }
 body footer {
-  font-size: 0.6rem;
+  font-size: clamp(0.6rem, 0.52rem + 0.4vw, 1rem);
 }
 
 /* colors */
@@ -112,7 +130,7 @@ body footer {
   #basket-form-flex-container {
     display: flex;
     flex-direction: row-reverse;
-    width: 65%;
+    width: 50rem;
     margin: 0 auto;
   }
 }
@@ -123,12 +141,14 @@ body footer {
   margin: 0 auto;
   padding: 1.3rem 1.3rem 0 1.3rem;
   white-space: nowrap;
+  width: clamp(18.3rem, 16.56rem + 8.7vw, 27rem);
 }
 @media screen and (min-width: 1280px) {
   #basket {
     height: 100%;
-    width: 30%;
+    width: 25rem;
     padding: 2rem 2rem 0 2rem;
+    margin-top: 2rem;
   }
 }
 #basket img {
@@ -223,7 +243,26 @@ body footer {
   border-radius: 5px;
 }
 
+#header-form-container {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#header-form-container h1 {
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 1280px) {
+  #header-form-container h1 {
+    padding-left: 2rem;
+  }
+}
+
 #checkout-form {
+  width: 18.5rem;
+  margin: 0 auto;
   margin-bottom: 5rem;
 }
 @media screen and (min-width: 1280px) {
@@ -250,22 +289,10 @@ body footer {
   margin-bottom: 0.3rem;
 }
 #checkout-form #shipping-address input, #checkout-form #contact-information input {
-  width: 17rem;
+  width: 100%;
   border-radius: 8px;
   border: 1px solid #828282;
   height: clamp(2rem, 1.8rem + 1vw, 3rem);
-}
-#checkout-form #shipping-address input::-moz-placeholder, #checkout-form #contact-information input::-moz-placeholder {
-  /* move into typography */
-  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
-}
-#checkout-form #shipping-address input:-ms-input-placeholder, #checkout-form #contact-information input:-ms-input-placeholder {
-  /* move into typography */
-  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
-}
-#checkout-form #shipping-address input::placeholder, #checkout-form #contact-information input::placeholder {
-  /* move into typography */
-  font-size: clamp(0.7rem, 0.66rem + 0.2vw, 0.9rem);
 }
 #checkout-form #shipping-address #icon-input-container, #checkout-form #contact-information #icon-input-container {
   position: relative;
@@ -294,6 +321,11 @@ body footer {
   color: #828282;
   width: 8rem;
 }
+@media screen and (min-width: 1280px) {
+  #checkout-form #shipping-address #country-input-container select, #checkout-form #contact-information #country-input-container select {
+    width: 8.7rem;
+  }
+}
 #checkout-form #shipping-address #country-input-container span, #checkout-form #contact-information #country-input-container span {
   position: absolute;
   padding-left: 0.3rem;
@@ -308,6 +340,12 @@ body footer {
   padding-left: 1.5rem;
   width: 8rem;
 }
+@media screen and (min-width: 1280px) {
+  #checkout-form #shipping-address #postcode-input-container input, #checkout-form #contact-information #postcode-input-container input {
+    width: 8.7rem;
+    width: 8.9rem;
+  }
+}
 #checkout-form #shipping-address #postcode-input-container span, #checkout-form #contact-information #postcode-input-container span {
   position: absolute;
   padding-left: 0.3rem;
@@ -318,11 +356,13 @@ body footer {
   flex-direction: row;
   margin-top: 1rem;
   justify-content: space-between;
-  width: 17rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 #checkout-form #save-info-container {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 #checkout-form #save-info-container input {
   cursor: pointer;
