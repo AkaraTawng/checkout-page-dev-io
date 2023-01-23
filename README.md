@@ -67,7 +67,7 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-I developed this checkout pagte as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories and replicate the provided Figma design.
+I developed this checkout page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories and replicate the provided Figma design.
 
 
 ## How To Use
